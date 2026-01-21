@@ -8,15 +8,17 @@ use App\Models\User;
 
 class SuperAdminSeeder extends Seeder
 {
-    public function run(): void
-    {
-        User::updateOrCreate(
-            ['email' => 'admin@admin.com'],
-            [
-                'name' => 'Super Admin',
-                'password' => Hash::make('123456'),
-                'role' => User::SUPER_ADMIN,
-            ]
-        );
-    }
+   public function run(): void
+{
+    User::updateOrCreate(
+        ['email' => 'admin2@gmail.com'],
+        [
+            'name' => 'Super Admin',
+            'password' => Hash::make('12345678'),
+            'role' => User::SUPER_ADMIN,
+            'email_verified_at' => now(),
+        ]
+    );
+}
+
 }

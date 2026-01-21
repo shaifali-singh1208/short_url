@@ -4,8 +4,10 @@
  
     <div class="card mb-4">
       
-        <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
+    
+          <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
             <h5 class="mb-0 fw-bold">All Users</h5>
+            <a href="{{ route('invitations.index') }}" class="btn btn-primary btn-sm">Invite</a>
         </div>
         <div class="card-body p-0">
             <div class="table-responsive">
